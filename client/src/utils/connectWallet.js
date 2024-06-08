@@ -25,7 +25,7 @@ export const connetWallet = async () => {
         const token = res.data.token;
         localStorage.setItem("token", token);
         console.log(token);
-        const contractAddress = "0xa76Ac8DFf0C04963E7Da61CA8f7875371cCF5ffd"
+        const contractAddress = "0xa76Ac8DFf0C04963E7Da61CA8f7875371c"
         const contractInstance = new ethers.Contract(contractAddress, contractAbi, signer);
         return {contractInstance, selectedAccount}
     } catch (error) {
