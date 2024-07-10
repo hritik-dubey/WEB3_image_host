@@ -25,7 +25,7 @@ const GetImage = () => {
                 const ipfsHashes = await getImageHashes()
                 const ipfsHashArray = Object.values(ipfsHashes)
                 console.log({ipfsHashArray});
-                const url=`http://localhost:3000/api/getImage?page=${currentPage}&limit=${imagePerPage}`
+                const url =`https://web3-image-host.onrender.com/api/getImage?page=${currentPage}&limit=${imagePerPage}`
                 const token = localStorage.getItem("token")
                 const config={
                     headers:{
